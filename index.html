@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cookie Corner 🍪</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                🍪 Cookie Corner
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#cookies">Cookies</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="cart-button" onclick="openCart()">
+                🛒 Cart <span id="cart-count">0</span>
+            </button>
+
+        </nav>
+    </header>
+
+
+    <!-- Hero -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="tagline">FRESHLY BAKED WITH LOVE ❤️</p>
+
+            <h1>
+                Happiness is
+                <span>just one cookie away.</span>
+            </h1>
+
+            <p>
+                Delicious homemade cookies baked fresh every day
+                using the finest ingredients.
+            </p>
+
+            <a href="#cookies" class="shop-btn">
+                Shop Cookies 🍪
+            </a>
+
+        </div>
+
+        <div class="hero-cookie">
+            🍪
+        </div>
+
+    </section>
+
+
+    <!-- Cookies -->
+    <section id="cookies" class="products">
+
+        <div class="section-heading">
+            <p>OUR MENU</p>
+            <h2>Freshly Baked Cookies</h2>
+        </div>
+
+        <div class="product-grid">
+
+            <!-- Cookie 1 -->
+            <div class="product-card">
+
+                <div class="cookie-image chocolate">
+                    🍪
+                </div>
+
+                <div class="product-info">
+                    <h3>Chocolate Chip</h3>
+
+                    <p>
+                        Classic buttery cookie loaded with
+                        delicious chocolate chips.
+                    </p>
+
+                    <div class="product-bottom">
+                        <strong>₹80</strong>
+
+                        <button onclick="addToCart('Chocolate Chip', 80)">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Cookie 2 -->
+            <div class="product-card">
+
+                <div class="cookie-image double">
+                    🍪
+                </div>
+
+                <div class="product-info">
+                    <h3>Double Chocolate</h3>
+
+                    <p>
+                        Rich chocolate cookie with extra
+                        chocolate chunks.
+                    </p>
+
+                    <div class="product-bottom">
+                        <strong>₹100</strong>
+
+                        <button onclick="addToCart('Double Chocolate', 100)">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Cookie 3 -->
+            <div class="product-card">
+
+                <div class="cookie-image red">
+                    🍪
+                </div>
+
+                <div class="product-info">
+                    <h3>Red Velvet</h3>
+
+                    <p>
+                        Soft red velvet cookie with creamy
+                        white chocolate chips.
+                    </p>
+
+                    <div class="product-bottom">
+                        <strong>₹110</strong>
+
+                        <button onclick="addToCart('Red Velvet', 110)">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Cookie 4 -->
+            <div class="product-card">
+
+                <div class="cookie-image peanut">
+                    🥜
+                </div>
+
+                <div class="product-info">
+                    <h3>Peanut Butter</h3>
+
+                    <p>
+                        Soft and chewy peanut butter cookie
+                        with a rich nutty flavor.
+                    </p>
+
+                    <div class="product-bottom">
+                        <strong>₹90</strong>
+
+                        <button onclick="addToCart('Peanut Butter', 90)">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Cookie 5 -->
+            <div class="product-card">
+
+                <div class="cookie-image oreo">
+                    🍪
+                </div>
+
+                <div class="product-info">
+                    <h3>Cookies & Cream</h3>
+
+                    <p>
+                        Creamy cookie packed with crunchy
+                        chocolate cookie pieces.
+                    </p>
+
+                    <div class="product-bottom">
+                        <strong>₹120</strong>
+
+                        <button onclick="addToCart('Cookies & Cream', 120)">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Cookie 6 -->
+            <div class="product-card">
+
+                <div class="cookie-image white">
+                    🍪
+                </div>
+
+                <div class="product-info">
+                    <h3>White Chocolate</h3>
+
+                    <p>
+                        Golden cookie filled with smooth
+                        white chocolate chunks.
+                    </p>
+
+                    <div class="product-bottom">
+                        <strong>₹110</strong>
+
+                        <button onclick="addToCart('White Chocolate', 110)">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section id="about" class="about">
+
+        <div class="about-cookie">
+            🍪
+        </div>
+
+        <div class="about-text">
+
+            <p class="tagline">OUR STORY</p>
+
+            <h2>Baked with love, served with happiness.</h2>
+
+            <p>
+                Cookie Corner started with one simple idea:
+                make delicious cookies that bring a smile to
+                everyone's face.
+            </p>
+
+            <p>
+                Every cookie is freshly baked using quality
+                ingredients and lots of love.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+
+        <div class="section-heading">
+            <p>GET IN TOUCH</p>
+            <h2>Contact Us</h2>
+        </div>
+
+        <form onsubmit="contactForm(event)">
+
+            <input
+                type="text"
+                id="customer-name"
+                placeholder="Your Name"
+                required
+            >
+
+            <input
+                type="email"
+                placeholder="Your Email"
+                required
+            >
+
+            <textarea
+                placeholder="Your Message"
+                rows="5"
+                required
+            ></textarea>
+
+            <button type="submit">
+                Send Message
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="cart-modal">
+
+        <div class="cart-box">
+
+            <button class="close" onclick="closeCart()">
+                ×
+            </button>
+
+            <h2>🛒 Your Cart</h2>
+
+            <div id="cart-items">
+                <p class="empty-cart">
+                    Your cart is empty.
+                </p>
+            </div>
+
+            <div class="cart-total">
+                Total: ₹<span id="cart-total">0</span>
+            </div>
+
+            <button class="checkout" onclick="checkout()">
+                Checkout
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <h3>🍪 Cookie Corner</h3>
+
+        <p>
+            Fresh cookies. Happy moments.
+        </p>
+
+        <p class="copyright">
+            © 2026 Cookie Corner. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
